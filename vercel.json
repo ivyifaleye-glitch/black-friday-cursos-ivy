@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/blackalunos",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/blackfriday",
+      "destination": "https://blackfriday-trilha-sabao-da-costa.vercel.app/"
+    }
+  ]
+}
