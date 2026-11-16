@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Black Friday Ladê · Cursos da Ivy com até 30% OFF</title>
+<title>Black Friday Escola do Sabão da Costa · Cursos da Ivy com até 30% OFF</title>
 <meta name="description" content="Black Friday exclusiva para alunos: cursos da Ivy Ifálèyẹ com até 30% OFF. Sabão da Costa, Orí, plantas, pomadas, aromaterapia e perfumaria ancestral.">
-<meta property="og:title" content="Black Friday Ladê · até 30% OFF nos cursos da Ivy">
+<meta property="og:title" content="Black Friday Escola do Sabão da Costa · até 30% OFF nos cursos da Ivy">
 <meta property="og:description" content="Oferta exclusiva para quem já caminha com a gente. Escolha seu próximo passo na jornada ancestral.">
 <meta property="og:image" content="https://ladecosmeticos.com.br/sabaodacosta/assets/img/ivy-oficina-hero.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -243,6 +243,23 @@
   }
   .sticky small{font-weight:700;opacity:.75}
 
+  /* ---------- whatsapp ---------- */
+  .wa-float{
+    position:fixed;right:20px;bottom:20px;z-index:31;width:58px;height:58px;border-radius:50%;
+    background:#25D366;color:#fff;display:grid;place-items:center;text-decoration:none;
+    box-shadow:0 12px 30px -8px rgba(0,0,0,.6);transition:transform .2s;
+  }
+  .wa-float:hover{transform:scale(1.07)}
+  .wa-float svg{width:30px;height:30px}
+  .btn-wa{background:#25D366;color:#fff}
+  .btn-wa:hover{background:#2EE574;transform:translateY(-2px)}
+  .wa-box{
+    margin-top:36px;max-width:780px;border:1px solid var(--line);border-radius:var(--radius);
+    padding:24px 26px;background:var(--ink-2);display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;
+  }
+  .wa-box h4{font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:600;line-height:1.15}
+  .wa-box p{color:var(--muted);font-size:14px;margin-top:2px}
+
   /* ---------- responsive ---------- */
   @media (max-width:920px){
     .grid.three{grid-template-columns:repeat(2,1fr)}
@@ -253,7 +270,8 @@
     .seal{max-width:280px;margin:0 auto;order:-1}
     .ivy-grid{grid-template-columns:1fr;gap:28px;padding:44px 0}
     .ivy-photo{max-width:240px}
-    .sticky{display:flex}
+    .sticky{display:flex;right:84px}
+    .wa-float{right:12px;bottom:12px;width:54px;height:54px}
   }
   @media (max-width:640px){
     .grid,.grid.three{grid-template-columns:1fr}
@@ -272,7 +290,7 @@
 </head>
 <body>
 
-<div class="topbar">Black Friday Ladê · até 30% OFF nos cursos da Ivy <span>· exclusivo para alunos</span></div>
+<div class="topbar">Black Friday Escola do Sabão da Costa · até 30% OFF nos cursos da Ivy <span>· exclusivo para alunos</span></div>
 
 <!-- ================= HERO ================= -->
 <header class="hero">
@@ -298,7 +316,7 @@
       <svg class="seal-ring" viewBox="0 0 200 200">
         <defs><path id="circ" d="M100,100 m-88,0 a88,88 0 1,1 176,0 a88,88 0 1,1 -176,0"/></defs>
         <text font-family="Manrope" font-size="9" font-weight="800" letter-spacing="4.2" fill="#F0D49A">
-          <textPath href="#circ">BLACK FRIDAY · LADÊ SABOARIA ANCESTRAL · BLACK FRIDAY · AXÉ ·</textPath>
+          <textPath href="#circ">BLACK FRIDAY · ESCOLA DO SABÃO DA COSTA · AXÉ ·</textPath>
         </text>
       </svg>
       <div class="seal-inner">
@@ -538,7 +556,7 @@
       <div class="sec-head" style="margin-bottom:0"><div class="kicker" style="font-size:12px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--terra-2)">Quem conduz</div></div>
       <h2>Ivy Ifálèyẹ</h2>
       <div class="role">Engenheira Agrônoma · Sacerdotisa de Orixá · Mestre em Saboaria Ancestral</div>
-      <p>Criadora do Método Alquimia de Axé e da Ladê Saboaria Ancestral, a Ivy une técnica segura, consciência e fundamento espiritual em cada curso. Você já conhece o jeito dela de ensinar: agora pode levar essa mesma profundidade para outras áreas do saber ancestral.</p>
+      <p>Criadora do Método Alquimia de Axé e da Escola do Sabão da Costa, a Ivy une técnica segura, consciência e fundamento espiritual em cada curso. Você já conhece o jeito dela de ensinar: agora pode levar essa mesma profundidade para outras áreas do saber ancestral.</p>
       <blockquote>“O verdadeiro Sabão da Costa não é apenas um produto.”</blockquote>
     </div>
   </div>
@@ -592,9 +610,20 @@
         <p>Todas as compras são processadas pela Kiwify, plataforma segura de pagamentos. As formas de pagamento disponíveis aparecem na própria página de checkout.</p>
       </details>
       <details>
+        <summary>Ainda tenho dúvidas. Com quem falo?</summary>
+        <p>Fale com a nossa equipe pelo <a href="https://wa.me/message/6XJFCETGF6USB1" target="_blank" rel="noopener" style="color:var(--gold)">WhatsApp</a>. A gente te ajuda a escolher o curso certo para o seu momento.</p>
+      </details>
+      <details>
         <summary>Por qual curso devo começar?</summary>
         <p>Se você acabou de fazer o Sabão da Costa, a continuação natural é o <a href="#black-soap" style="color:var(--gold)">Black Soap</a>, as <a href="#receitas" style="color:var(--gold)">Receitas Complementares</a> e a <a href="#consagracao" style="color:var(--gold)">Jornada de Consagração Alquímica</a>. Se o seu desejo é cuidar da sua espiritualidade, comece pelo <a href="#ori" style="color:var(--gold)">Workshop Orí</a>. E se você quer empreender, as <a href="#pomadas" style="color:var(--gold)">Pomadas Naturais</a> são um ótimo caminho.</p>
       </details>
+    </div>
+    <div class="wa-box">
+      <div>
+        <h4>Ficou com alguma dúvida?</h4>
+        <p>Chame a gente no WhatsApp e tire suas dúvidas antes de comprar.</p>
+      </div>
+      <a class="btn btn-wa" href="https://wa.me/message/6XJFCETGF6USB1" target="_blank" rel="noopener"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.25-.46-2.38-1.47-.88-.79-1.47-1.76-1.64-2.05-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.31 1.27.49 1.7.63.71.23 1.36.2 1.87.12.57-.08 1.75-.72 2-1.41.25-.69.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35zM12.05 21.5h-.01a9.4 9.4 0 0 1-4.8-1.32l-.34-.2-3.57.94.95-3.48-.22-.36a9.4 9.4 0 0 1-1.44-5.02c0-5.2 4.23-9.43 9.44-9.43 2.52 0 4.89.98 6.67 2.77a9.37 9.37 0 0 1 2.76 6.67c0 5.2-4.24 9.43-9.44 9.43zm8.03-17.46A11.27 11.27 0 0 0 12.05.72C5.8.72.7 5.8.7 12.06c0 2 .52 3.95 1.52 5.67L.6 23.6l6.01-1.58a11.33 11.33 0 0 0 5.43 1.38h.01c6.25 0 11.34-5.08 11.34-11.34 0-3.03-1.18-5.88-3.32-8.02z"/></svg> Falar no WhatsApp</a>
     </div>
   </div>
 </section>
@@ -604,15 +633,17 @@
   <div class="wrap">
     <h2>O saber ancestral se aprofunda <em>a cada passo</em>.</h2>
     <p>Esta é a oportunidade de continuar sua jornada com a Ivy com até 30% de desconto. Escolha o seu próximo curso.</p>
-    <a href="#ofertas" class="btn btn-primary">Escolher meu próximo curso</a>
+    <div style="position:relative;display:flex;gap:12px;justify-content:center;flex-wrap:wrap"><a href="#ofertas" class="btn btn-primary">Escolher meu próximo curso</a><a class="btn btn-ghost" href="https://wa.me/message/6XJFCETGF6USB1" target="_blank" rel="noopener"><svg width="22" height="22" viewBox="0 0 24 24" fill="#25D366" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.25-.46-2.38-1.47-.88-.79-1.47-1.76-1.64-2.05-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.31 1.27.49 1.7.63.71.23 1.36.2 1.87.12.57-.08 1.75-.72 2-1.41.25-.69.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35zM12.05 21.5h-.01a9.4 9.4 0 0 1-4.8-1.32l-.34-.2-3.57.94.95-3.48-.22-.36a9.4 9.4 0 0 1-1.44-5.02c0-5.2 4.23-9.43 9.44-9.43 2.52 0 4.89.98 6.67 2.77a9.37 9.37 0 0 1 2.76 6.67c0 5.2-4.24 9.43-9.44 9.43zm8.03-17.46A11.27 11.27 0 0 0 12.05.72C5.8.72.7 5.8.7 12.06c0 2 .52 3.95 1.52 5.67L.6 23.6l6.01-1.58a11.33 11.33 0 0 0 5.43 1.38h.01c6.25 0 11.34-5.08 11.34-11.34 0-3.03-1.18-5.88-3.32-8.02z"/></svg> Tirar dúvidas no WhatsApp</a></div>
   </div>
 </section>
 
 <footer>
-  <div class="wrap">Ladê Saboaria Ancestral · Ivy Ifálèyẹ · <a href="https://www.instagram.com/ivyifaleye/" target="_blank" rel="noopener">@ivyifaleye</a></div>
+  <div class="wrap">Escola do Sabão da Costa · Ivy Ifálèyẹ · <a href="https://www.instagram.com/ivyifaleye/" target="_blank" rel="noopener">@ivyifaleye</a></div>
 </footer>
 
-<a href="#ofertas" class="sticky">Ver ofertas com 30% OFF <small>8 cursos →</small></a>
+<a class="wa-float" href="https://wa.me/message/6XJFCETGF6USB1" target="_blank" rel="noopener" aria-label="Falar no WhatsApp"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.25-.46-2.38-1.47-.88-.79-1.47-1.76-1.64-2.05-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.31 1.27.49 1.7.63.71.23 1.36.2 1.87.12.57-.08 1.75-.72 2-1.41.25-.69.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35zM12.05 21.5h-.01a9.4 9.4 0 0 1-4.8-1.32l-.34-.2-3.57.94.95-3.48-.22-.36a9.4 9.4 0 0 1-1.44-5.02c0-5.2 4.23-9.43 9.44-9.43 2.52 0 4.89.98 6.67 2.77a9.37 9.37 0 0 1 2.76 6.67c0 5.2-4.24 9.43-9.44 9.43zm8.03-17.46A11.27 11.27 0 0 0 12.05.72C5.8.72.7 5.8.7 12.06c0 2 .52 3.95 1.52 5.67L.6 23.6l6.01-1.58a11.33 11.33 0 0 0 5.43 1.38h.01c6.25 0 11.34-5.08 11.34-11.34 0-3.03-1.18-5.88-3.32-8.02z"/></svg></a>
+
+<a href="#ofertas" class="sticky">Ver ofertas <small>até 30% OFF →</small></a>
 
 </body>
 </html>
