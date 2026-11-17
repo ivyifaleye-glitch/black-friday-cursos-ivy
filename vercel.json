@@ -2,6 +2,7 @@
   "rewrites": [
     { "source": "/blackalunos", "destination": "/index.html" },
     { "source": "/blackfriday", "destination": "/portas-de-entrada.html" },
-    { "source": "/blackalunos.afi", "destination": "/blackalunos-afiliados.html" }
+    { "source": "/blackalunos.afi", "destination": "/blackalunos-afiliados.html" },
+    { "source": "/blackfriday.afi", "destination": "https://blackfriday-portas-afiliada.vercel.app/" }
   ]
 }
