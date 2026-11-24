@@ -1,8 +1,24 @@
 {
   "rewrites": [
-    { "source": "/blackalunos", "destination": "/index.html" },
-    { "source": "/blackfriday", "destination": "/portas-de-entrada.html" },
-    { "source": "/blackalunos.afi", "destination": "/blackalunos-afiliados.html" },
-    { "source": "/blackfriday.afi", "destination": "https://blackfriday-portas-afiliada.vercel.app/" }
+    {
+      "source": "/blackalunos",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/blackfriday",
+      "destination": "/portas-de-entrada.html"
+    },
+    {
+      "source": "/blackalunos.afi",
+      "destination": "/blackalunos-afiliados.html"
+    },
+    {
+      "source": "/blackfriday.afi",
+      "destination": "https://blackfriday-portas-afiliada.vercel.app/"
+    },
+    {
+      "source": "/erveira",
+      "destination": "https://mailchi.mp/5ba3b9eb87fa/o-despertar-da-erveira-inscries-dezembro-2026"
+    }
   ]
 }
