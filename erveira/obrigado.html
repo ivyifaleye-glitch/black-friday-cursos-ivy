@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Falta só um passo · O Despertar do Erveir@</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#2A1A0E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=DM+Sans:opsz,wght@9..40,400;9..40,700&family=Fraunces:opsz,wght@9..144,400&display=swap" rel="stylesheet">
+
+<!-- Espaço para o evento de conversão (ex.: fbq('track','Lead')) -->
+
+<style>
+  :root{
+    --raiz:#2A1A0E; --madeira:#6B4526; --girassol:#F0A000; --girassol-claro:#FFC23D;
+    --hibisco:#C0507E; --folha:#4F6B3A; --papel:#F6EEDF; --tinta:#2B2A20;
+    --serif:"Fraunces", Georgia, serif; --mao:"Caveat", cursive; --sans:"DM Sans", system-ui, sans-serif;
+  }
+  *,*::before,*::after{ box-sizing:border-box; }
+  body{ margin:0; background:var(--raiz); color:var(--papel); font-family:var(--sans); font-size:17px;
+        line-height:1.5; -webkit-font-smoothing:antialiased; }
+  @media (min-width:900px){ body{ font-size:18px; } }
+  h1,h2{ font-family:var(--serif); font-weight:400; line-height:1.1; margin:0; }
+  p{ margin:0 0 1em; }
+
+  .topo{ padding:64px 24px 56px; text-align:center; }
+  @media (min-width:900px){ .topo{ padding:96px 24px 80px; } }
+  .topo .wrap{ max-width:620px; margin:0 auto; }
+
+  .marca{ display:inline-block; line-height:1; margin-bottom:40px; }
+  .marca__topo{ display:block; font-family:var(--serif); color:var(--papel); font-size:20px; }
+  .marca__nome{ display:inline-block; font-family:var(--mao); font-weight:600; color:var(--girassol);
+                font-size:50px; transform:rotate(-3deg); }
+  @media (min-width:900px){ .marca__topo{ font-size:26px; } .marca__nome{ font-size:66px; } }
+
+  .mao{ font-family:var(--mao); font-weight:600; color:var(--girassol); font-size:30px; display:inline-block;
+        transform:rotate(-2deg); margin-bottom:10px; }
+  @media (min-width:900px){ .mao{ font-size:40px; } }
+
+  .titulo{ font-size:40px; margin-bottom:18px; }
+  @media (min-width:900px){ .titulo{ font-size:60px; } }
+
+  .passo{ display:inline-block; background:var(--hibisco); color:var(--papel); font-weight:700; text-transform:uppercase;
+          letter-spacing:.12em; font-size:13px; padding:6px 12px; margin-bottom:22px; transform:rotate(-1deg); }
+
+  .botao{ display:inline-flex; align-items:center; justify-content:center; gap:12px; min-height:56px;
+          width:100%; max-width:440px; padding:0 28px; background:var(--girassol); color:var(--raiz); border-radius:0;
+          font-weight:700; text-transform:uppercase; letter-spacing:.12em; font-size:14px; text-decoration:none;
+          transition:background .15s ease; margin:12px 0 14px; }
+  @media (max-width:420px){ .botao{ letter-spacing:.06em; padding:0 16px; gap:10px; } }
+  @media (min-width:900px){ .botao{ font-size:15px; } }
+  .botao:hover, .botao:focus-visible{ background:var(--girassol-claro); }
+  .botao:focus-visible{ outline:2px solid var(--papel); outline-offset:3px; }
+  .botao svg{ width:22px; height:22px; flex:none; }
+  .nota{ font-size:15px; color:rgba(246,238,223,.7); }
+
+  .agenda{ background:var(--papel); color:var(--tinta); padding:64px 24px; }
+  @media (min-width:900px){ .agenda{ padding:96px 24px; } }
+  .agenda .wrap{ max-width:680px; margin:0 auto; }
+  .agenda h2{ color:var(--madeira); font-size:32px; margin-bottom:28px; }
+  @media (min-width:900px){ .agenda h2{ font-size:44px; } }
+  .dias{ list-style:none; margin:0 0 32px; padding:0; }
+  .dias li{ display:grid; grid-template-columns:96px 1fr; gap:16px; padding:18px 0; border-top:1px solid rgba(43,42,32,.15); }
+  .dias li:last-child{ border-bottom:1px solid rgba(43,42,32,.15); }
+  .dias .data{ font-family:var(--serif); font-size:30px; color:var(--madeira); line-height:1; }
+  .dias .data small{ display:block; font-family:var(--sans); font-weight:700; text-transform:uppercase;
+                     letter-spacing:.12em; font-size:12px; color:var(--folha); margin-top:6px; }
+  .dias b{ display:block; font-family:var(--serif); font-weight:400; font-size:20px; color:var(--raiz); margin-bottom:2px; }
+  .dias span{ font-size:15px; color:rgba(43,42,32,.75); }
+  .lembrete{ border:2px dashed var(--girassol); padding:18px 20px; }
+  .lembrete b{ color:var(--folha); text-transform:uppercase; letter-spacing:.12em; font-size:13px; display:block; margin-bottom:6px; }
+  .lembrete p{ margin:0; }
+  .lembrete a{ color:var(--madeira); font-weight:700; }
+
+  footer{ background:var(--raiz); color:rgba(246,238,223,.7); text-align:center; padding:40px 24px 48px; font-size:15px; }
+  footer a{ color:var(--papel); text-decoration:none; border-bottom:1px solid rgba(246,238,223,.35); }
+</style>
+</head>
+<body>
+
+<section class="topo">
+  <div class="wrap">
+    <div class="marca" aria-label="O Despertar do Erveir@">
+      <span class="marca__topo">O Despertar do</span>
+      <span class="marca__nome">Erveir@</span>
+    </div>
+
+    <p class="mao" id="saudacao">Àṣẹ, a sua vaga está garantida!</p>
+    <h1 class="titulo">Agora falta só um passo</h1>
+    <span class="passo">Último passo</span>
+    <p>É pelo grupo do WhatsApp que chegam o link de cada aula, o aviso das lives e o material do dia. Quem não entra no grupo pode perder as aulas.</p>
+
+    <a class="botao" id="botao-grupo" href="https://chat.whatsapp.com/Gsi96yRKTvaARcrLJdezQ0" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 2s.8 2.3.9 2.5c.1.2 1.6 2.5 4 3.5 1.5.6 2.1.7 2.8.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.5-.3Z"/></svg>
+      Entrar no grupo do WhatsApp
+    </a>
+    <p class="nota">O grupo é só de avisos, para o seu celular não lotar de mensagens.</p>
+  </div>
+</section>
+
+<section class="agenda">
+  <div class="wrap">
+    <h2>Anote na agenda</h2>
+    <ul class="dias">
+      <li><div class="data">7/12<small>Segunda</small></div><div><b>Por que o seu banho de ervas não funciona</b><span>Aula no YouTube às 6h · live no Instagram às 19h</span></div></li>
+      <li><div class="data">8/12<small>Terça</small></div><div><b>O Orí e as folhas</b><span>Aula no YouTube às 6h · live no Instagram às 19h</span></div></li>
+      <li><div class="data">9/12<small>Quarta</small></div><div><b>O banho da prosperidade para fechar o ano</b><span>Aula no YouTube às 6h · live no Instagram às 19h</span></div></li>
+    </ul>
+    <div class="lembrete">
+      <b>Enquanto isso</b>
+      <p>Siga a Ivy no Instagram, <a href="https://www.instagram.com/ivyifaleye/" target="_blank" rel="noopener">@ivyifaleye</a>, que é onde acontecem as lives.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>Ivy Ifálèyẹ · Saberes Ancestrais</p>
+  <a href="https://www.instagram.com/ivyifaleye/" target="_blank" rel="noopener">@ivyifaleye</a>
+</footer>
+
+<script>
+/* =====================================================================
+   LINK DO GRUPO DO WHATSAPP: cole abaixo, no lugar de COLE_AQUI.
+   Ex.: https://chat.whatsapp.com/AbCdEf123456
+   ===================================================================== */
+const LINK_GRUPO_WHATSAPP = "https://chat.whatsapp.com/Gsi96yRKTvaARcrLJdezQ0";
+
+(function(){
+  const botao = document.getElementById("botao-grupo");
+  if (/^https:\/\/chat\.whatsapp\.com\//.test(LINK_GRUPO_WHATSAPP)) botao.href = LINK_GRUPO_WHATSAPP;
+  else { botao.removeAttribute("target"); botao.addEventListener("click", e => { e.preventDefault(); console.warn("Link do grupo ainda não configurado."); }); }
+
+  // Personaliza a saudação com o primeiro nome vindo da página de inscrição
+  let nome = new URLSearchParams(location.search).get('nome');
+  try { nome = nome || sessionStorage.getItem('erveira-primeiro-nome'); } catch {}
+  if (nome) {
+    const limpo = nome.trim().split(/\s+/)[0].slice(0, 30);
+    if (limpo) document.getElementById("saudacao").textContent = "Àṣẹ, " + limpo + "! Sua vaga está garantida.";
+  }
+  if (new URLSearchParams(location.search).get('confirmacao') === 'pendente') {
+    document.getElementById('saudacao').textContent = 'Confira seu e-mail para confirmar a inscrição.';
+    document.querySelector('.titulo').textContent = 'Confirme o e-mail e entre no grupo';
+  }
+})();
+</script>
+</body>
+</html>

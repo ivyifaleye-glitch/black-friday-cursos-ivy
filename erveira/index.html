@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>O Despertar do Erveir@ · evento gratuito com Ivy Ifálèyẹ · 7, 8 e 9 de dezembro</title>
+<meta name="description" content="3 aulas gratuitas para você usar as folhas com fundamento e fazer o seu banho de ervas funcionar de verdade. Com Ivy Ifálèyẹ, de 7 a 9 de dezembro.">
+<meta name="theme-color" content="#2A1A0E">
+
+<!-- Compartilhamento (WhatsApp, Instagram, Facebook). Troque og.jpg por uma imagem 1200x630. -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="O Despertar do Erveir@ · evento gratuito">
+<meta property="og:description" content="3 aulas para você usar as folhas com fundamento e fazer o seu banho de ervas funcionar de verdade. 7, 8 e 9 de dezembro.">
+<meta property="og:image" content="https://escolaivyifaleye.com.br/erveira/images/og.jpg">
+<meta property="og:locale" content="pt_BR">
+<link rel="canonical" href="https://escolaivyifaleye.com.br/erveira">
+<base href="/erveira/">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=DM+Sans:opsz,wght@9..40,400;9..40,700&family=Fraunces:opsz,wght@9..144,400&display=swap" rel="stylesheet">
+
+<!-- Espaço para o Pixel da Meta / Google Tag, se for usar -->
+
+<style>
+  :root{
+    --raiz:#2A1A0E; --madeira:#6B4526; --girassol:#F0A000; --girassol-claro:#FFC23D;
+    --hibisco:#C0507E; --folha:#4F6B3A; --papel:#F6EEDF; --tinta:#2B2A20;
+    --serif:"Fraunces", Georgia, serif; --mao:"Caveat", cursive; --sans:"DM Sans", system-ui, sans-serif;
+    --secao:64px; --lateral:24px; --texto:680px;
+  }
+  @media (min-width:900px){ :root{ --secao:96px; } }
+
+  *,*::before,*::after{ box-sizing:border-box; }
+  html{ scroll-behavior:smooth; }
+  body{ margin:0; background:var(--raiz); color:var(--tinta); font-family:var(--sans);
+        font-size:17px; line-height:1.5; -webkit-font-smoothing:antialiased; }
+  @media (min-width:900px){ body{ font-size:18px; } }
+  img{ display:block; max-width:100%; }
+  h1,h2,h3{ font-family:var(--serif); font-weight:400; line-height:1.1; margin:0; }
+  p{ margin:0 0 1em; }
+  em, i{ font-style:italic; }
+
+  .wrap{ max-width:calc(var(--texto) + 2*var(--lateral)); margin:0 auto; padding:0 var(--lateral); }
+  .wrap--largo{ max-width:1120px; }
+  section{ padding:var(--secao) 0; }
+
+  .s-raiz{ background:var(--raiz); color:var(--papel); }
+  .s-madeira{ background:var(--madeira); color:var(--papel); }
+  .s-papel{ background:var(--papel); color:var(--tinta); }
+
+  .titulo-secao{ font-size:32px; margin-bottom:28px; }
+  @media (min-width:900px){ .titulo-secao{ font-size:44px; } }
+  .s-papel .titulo-secao{ color:var(--madeira); }
+
+  .mao{ font-family:var(--mao); font-weight:600; transform:rotate(-2deg); display:inline-block;
+        font-size:30px; line-height:1.1; }
+  @media (min-width:900px){ .mao{ font-size:40px; } }
+  .s-raiz .mao, .s-madeira .mao, .hero .mao{ color:var(--girassol); }
+  .s-papel .mao{ color:var(--folha); }
+
+  .rotulo{ font-weight:700; text-transform:uppercase; letter-spacing:.12em; font-size:14px; }
+  @media (min-width:900px){ .rotulo{ font-size:15px; } }
+
+  /* Botão: girassol, texto raiz, cantos retos, 56px */
+  .botao{ display:inline-flex; align-items:center; justify-content:center; min-height:56px;
+          padding:0 32px; background:var(--girassol); color:var(--raiz); border:0; border-radius:0;
+          font-family:var(--sans); font-weight:700; text-transform:uppercase; letter-spacing:.12em;
+          font-size:14px; text-decoration:none; cursor:pointer; transition:background .15s ease; }
+  @media (min-width:900px){ .botao{ font-size:15px; } }
+  .botao:hover, .botao:focus-visible{ background:var(--girassol-claro); }
+  .botao:focus-visible{ outline:2px solid var(--papel); outline-offset:3px; }
+  .botao[disabled]{ opacity:.7; cursor:wait; }
+
+  /* ---------- TOPO ---------- */
+  .hero{ position:relative; background:var(--raiz); color:var(--papel); overflow:hidden; }
+  .hero__foto{ position:relative; width:100%; aspect-ratio:4/5; }
+  .hero__foto picture{ display:block; width:100%; height:100%; }
+  .hero__foto img{ width:100%; height:100%; object-fit:cover; object-position:center 30%; }
+  .hero__foto::after{ content:""; position:absolute; inset:0;
+     background:linear-gradient(to top, var(--raiz) 0%, rgba(42,26,14,.9) 25%, rgba(42,26,14,0) 55%); }
+  .hero__conteudo{ position:relative; z-index:2; margin-top:-34%; padding:0 var(--lateral) 64px; }
+  .hero--sem-foto .hero__foto{ display:none; }
+  .hero--sem-foto .hero__conteudo{ margin-top:0; padding-top:128px; }
+
+  @media (min-width:900px){
+    .hero{ min-height:clamp(620px, 92vh, 860px); }
+    .hero__foto{ position:absolute; top:0; right:0; bottom:0; width:54%; aspect-ratio:auto; }
+    .hero__foto img{ object-position:center 35%; }
+    .hero__foto::after{ background:
+       linear-gradient(to right, var(--raiz) 0%, rgba(42,26,14,.55) 22%, rgba(42,26,14,0) 50%),
+       linear-gradient(to top, rgba(42,26,14,.6) 0%, rgba(42,26,14,0) 30%); }
+    .hero__conteudo{ position:absolute; left:0; right:0; bottom:0; top:0; margin:0;
+       padding:0 max(48px, calc((100vw - 1180px)/2)) 0; display:flex; flex-direction:column;
+       justify-content:center; align-items:flex-start; }
+    .hero__conteudo > *{ max-width:600px; }
+    .hero--sem-foto .hero__conteudo{ position:relative; padding-top:120px; padding-bottom:120px; }
+  }
+  .hero__chamada{ margin-bottom:12px; }
+  .hero .marca, .hero__chamada{ display:table; }
+  .hero__linha{ font-weight:700; text-transform:uppercase; letter-spacing:.16em; font-size:14px; color:var(--girassol); margin:18px 0 0; }
+  .hero__linha span{ color:var(--papel); opacity:.6; padding:0 4px; }
+  @media (max-width:899px){ .hero__linha span{ display:none; } .hero__linha b{ display:block; font-weight:700; } }
+  @media (min-width:900px){ .hero__linha{ font-size:17px; } .hero__linha b{ font-weight:700; } }
+  @media (max-width:420px){ .botao{ letter-spacing:.08em; padding:0 18px; } }
+  .hero__sub{ max-width:520px; font-size:18px; margin:14px 0 28px; color:var(--papel); }
+  @media (min-width:900px){ .hero__sub{ font-size:20px; } }
+
+
+  /* ---------- MARCA ---------- */
+  .marca{ display:inline-block; line-height:1; }
+  .marca__topo{ display:block; font-family:var(--serif); font-weight:400; color:var(--papel);
+                font-size:32px; letter-spacing:.01em; margin-left:4px; }
+  .marca__nome{ position:relative; display:inline-block; font-family:var(--mao); font-weight:600;
+                color:var(--girassol); font-size:80px; transform:rotate(-3deg); transform-origin:left center;
+                margin-top:-2px; padding-right:28px; }
+  .marca__flor{ position:absolute; right:-2px; top:20px; width:28px; height:28px; }
+  @media (min-width:900px){
+    .marca__topo{ font-size:50px; }
+    .marca__nome{ font-size:128px; padding-right:52px; margin-top:-8px; }
+    .marca__flor{ width:50px; height:50px; top:34px; }
+  }
+
+  /* ---------- PARA QUEM É ---------- */
+  .para-quem{ max-width:var(--texto); }
+  .para-quem p{ font-size:20px; line-height:1.5; }
+  @media (min-width:900px){ .para-quem p{ font-size:22px; } }
+  .para-quem .destaque{ font-family:var(--serif); color:var(--madeira); font-size:26px; line-height:1.25; margin-top:24px; }
+  @media (min-width:900px){ .para-quem .destaque{ font-size:32px; } }
+
+  /* ---------- AULAS ---------- */
+  .aulas__intro{ max-width:var(--texto); margin-bottom:40px; }
+  .aulas__lista{ display:grid; gap:32px; }
+  .aula{ background:var(--papel); color:var(--tinta); display:grid; }
+  .aula__capa{ width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; background:#efe3cc; }
+  .aula__corpo{ padding:24px 22px 26px; display:flex; flex-direction:column; }
+  @media (min-width:900px){
+    .aulas__lista{ gap:40px; }
+    .aula{ grid-template-columns:minmax(0,1.35fr) minmax(0,1fr); align-items:center; }
+    .aula__corpo{ padding:28px 36px 28px 24px; }
+  }
+  .aula__data{ display:inline-flex; align-self:flex-start; background:var(--girassol); color:var(--raiz); padding:6px 12px; margin-bottom:16px; }
+  .aula ul{ margin:0 0 18px; padding-left:18px; font-size:16px; }
+  .aula li{ margin-bottom:6px; }
+  .aula li::marker{ color:var(--folha); }
+  .leva{ border:2px dashed var(--girassol); padding:14px 16px; font-size:16px; }
+  .leva .rotulo{ display:block; color:var(--folha); margin-bottom:6px; font-size:13px; }
+  .so-leitor{ position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; }
+  .aulas__cta{ text-align:center; margin-top:48px; }
+
+  /* ---------- QUEM ENSINA ---------- */
+  .ivy{ display:grid; gap:40px; align-items:center; }
+  @media (min-width:900px){ .ivy{ grid-template-columns:380px 1fr; gap:64px; } }
+  .colada{ position:relative; margin:12px auto 0; width:100%; max-width:340px; background:#FFFBF2; padding:12px 12px 48px;
+           transform:rotate(-2deg); box-shadow:0 10px 28px rgba(43,42,32,.18), 0 2px 4px rgba(43,42,32,.12); }
+  .colada img{ width:100%; height:auto; aspect-ratio:4/5; color:transparent; object-fit:cover; background:#e9dfcb; }
+  .colada figcaption{ position:absolute; left:0; right:0; bottom:10px; text-align:center;
+                      font-family:var(--mao); font-weight:600; font-size:24px; color:var(--madeira); }
+  .colada::before{ content:""; position:absolute; top:-14px; left:50%; width:110px; height:30px;
+                   transform:translateX(-50%) rotate(3deg); background:rgba(240,160,0,.38); }
+  .ivy h2{ margin-bottom:20px; }
+  .ivy .mao{ margin-bottom:4px; }
+  .ivy__fecho{ font-family:var(--serif); font-size:21px; line-height:1.35; color:var(--madeira); margin-top:24px; }
+
+  /* ---------- FORMULÁRIO ---------- */
+  .inscricao .wrap{ max-width:calc(var(--texto) + 2*var(--lateral)); }
+  .inscricao__caixa{ border:2px dashed var(--girassol); padding:32px 22px; background:#FFFBF2; }
+  @media (min-width:900px){ .inscricao__caixa{ padding:48px 48px; } }
+  .inscricao .titulo-secao{ margin-bottom:8px; }
+  .inscricao__sub{ margin-bottom:28px; }
+  .campo{ margin-bottom:18px; }
+  .campo label{ display:block; margin-bottom:8px; color:var(--madeira); }
+  .campo input{ width:100%; height:56px; padding:0 16px; border:1.5px solid var(--tinta); border-radius:0;
+                background:#FFFBF2; color:var(--tinta); font:inherit; font-size:17px; }
+  .campo input:focus{ outline:none; border-color:var(--folha); box-shadow:0 0 0 3px rgba(79,107,58,.25); }
+  .campo input[aria-invalid="true"]{ border-color:#9B2C2C; }
+  .form .botao{ width:100%; margin-top:8px; }
+  .form__msg{ min-height:24px; margin:14px 0 0; font-size:15px; color:#9B2C2C; }
+  .form__aviso{ font-size:14px; color:rgba(43,42,32,.7); margin:12px 0 0; text-align:center; }
+  .hp{ position:absolute; left:-5000px; }
+
+  /* ---------- RODAPÉ ---------- */
+  footer{ background:var(--raiz); color:var(--papel); padding:56px 0 64px; text-align:center; }
+  .carimbo{ width:120px; height:120px; margin:0 auto 16px; color:var(--girassol); }
+  footer a{ color:var(--papel); text-decoration:none; border-bottom:1px solid rgba(246,238,223,.35); }
+  footer a:hover{ border-color:var(--girassol); }
+  footer small{ display:block; margin-top:18px; color:rgba(246,238,223,.55); font-size:13px; }
+
+
+  /* ---------- FATOS (como funciona, junto do formulário) ---------- */
+  .fatos{ list-style:none; margin:40px 0; padding:0; display:grid; grid-template-columns:repeat(3,1fr); gap:12px; }
+  .fatos li{ background:var(--raiz); color:var(--papel); padding:16px 12px; text-align:center; font-size:14px; line-height:1.3; }
+  .fatos__num{ display:block; font-family:var(--serif); color:var(--girassol); font-size:26px; line-height:1; margin-bottom:6px; white-space:nowrap; }
+  @media (min-width:900px){ .fatos li{ font-size:15px; padding:20px 16px; } .fatos__num{ font-size:34px; } }
+  .botao--ivy{ margin-top:12px; }
+
+  /* ---------- BARRA FIXA (celular) ---------- */
+  .barra-fixa{ position:fixed; left:0; right:0; bottom:0; z-index:50; display:flex; align-items:center; justify-content:space-between;
+     gap:12px; padding:10px 12px 10px 18px; padding-bottom:calc(10px + env(safe-area-inset-bottom));
+     background:var(--raiz); color:var(--papel); text-decoration:none; font-size:14px;
+     border-top:1px solid rgba(240,160,0,.5); transform:translateY(110%); transition:transform .25s ease; }
+  .barra-fixa.visivel{ transform:none; }
+  .barra-fixa b{ color:var(--girassol); }
+  .barra-fixa__cta{ background:var(--girassol); color:var(--raiz); font-weight:700; text-transform:uppercase;
+     letter-spacing:.1em; font-size:13px; padding:0 16px; min-height:44px; display:inline-flex; align-items:center; white-space:nowrap; }
+  @media (min-width:900px){ .barra-fixa{ display:none; } }
+
+  @media (prefers-reduced-motion:reduce){ html{ scroll-behavior:auto; } }
+</style>
+</head>
+<body>
+
+<!-- ============ TOPO ============ -->
+<header class="hero" id="topo">
+  <div class="hero__foto">
+    <picture>
+      <source media="(min-width:900px)" srcset="images/topo.jpg">
+      <img src="images/topo-celular.jpg" alt="Ivy Ifálèyẹ tocando uma samambaia no jardim" fetchpriority="high"
+           onerror="document.getElementById('topo').classList.add('hero--sem-foto')">
+    </picture>
+  </div>
+
+  <div class="hero__conteudo">
+    <p class="mao hero__chamada">Inscreva-se no evento gratuito</p>
+    <h1 class="marca" aria-label="O Despertar do Erveir@">
+      <span class="marca__topo" aria-hidden="true">O Despertar do</span>
+      <span class="marca__nome" aria-hidden="true">Erveir@<svg class="marca__flor" viewBox="0 0 40 40" aria-hidden="true"><g fill="#F0A000"><ellipse cx="20" cy="7" rx="4" ry="7"/><ellipse cx="20" cy="7" rx="4" ry="7" transform="rotate(45 20 20)"/><ellipse cx="20" cy="7" rx="4" ry="7" transform="rotate(90 20 20)"/><ellipse cx="20" cy="7" rx="4" ry="7" transform="rotate(135 20 20)"/><ellipse cx="20" cy="7" rx="4" ry="7" transform="rotate(180 20 20)"/><ellipse cx="20" cy="7" rx="4" ry="7" transform="rotate(225 20 20)"/><ellipse cx="20" cy="7" rx="4" ry="7" transform="rotate(270 20 20)"/><ellipse cx="20" cy="7" rx="4" ry="7" transform="rotate(315 20 20)"/></g><circle cx="20" cy="20" r="7" fill="#6B4526"/></svg></span>
+    </h1>
+    <p class="hero__linha"><b>7, 8 e 9 de dezembro</b> <span>·</span> <b>online e gratuito</b></p>
+    <p class="hero__sub">3 aulas para você usar as folhas com fundamento e fazer o seu banho de ervas funcionar de verdade.</p>
+    <a class="botao" href="/erveira#inscricao">Quero participar gratuitamente</a>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ PROMESSA + INSCRIÇÃO (mesma ordem da página do Sabão da Costa: promessa, gratuito, formulário) ============ -->
+<section class="s-papel inscricao" id="inscricao">
+  <div class="wrap">
+    <div class="para-quem">
+      <h2 class="titulo-secao">Para quem é</h2>
+      <p>Para quem é de axé, usa folha toda semana e sente que ainda não compreende profundamente o que faz.</p>
+      <p class="destaque">Sua avó te ensinou o que fazer com as folhas. Aqui você aprende o porquê.</p>
+    </div>
+
+    <ul class="fatos" aria-label="Como funciona">
+      <li><span class="fatos__num">7 · 8 · 9</span><span>de dezembro</span></li>
+      <li><span class="fatos__num">6h</span><span>aula gravada no YouTube</span></li>
+      <li><span class="fatos__num">19h</span><span>live de dúvidas no Instagram</span></li>
+    </ul>
+
+    <div class="inscricao__caixa">
+      <p class="mao">100% online e gratuito</p>
+      <h2 class="titulo-secao">Garanta a sua vaga</h2>
+      <p class="inscricao__sub">Você recebe o link de cada aula e o material do dia pelo grupo do evento no WhatsApp.</p>
+
+      <form class="form" id="form-inscricao" novalidate>
+        <div class="campo">
+          <label class="rotulo" for="nome">Seu nome</label>
+          <input id="nome" name="nome" type="text" autocomplete="given-name" required placeholder="Seu primeiro nome">
+        </div>
+        <div class="campo">
+          <label class="rotulo" for="email">Seu melhor e-mail</label>
+          <input id="email" name="email" type="email" autocomplete="email" inputmode="email" required placeholder="voce@email.com">
+        </div>
+        <div class="campo">
+          <label class="rotulo" for="whatsapp">WhatsApp com DDD</label>
+          <input id="whatsapp" name="whatsapp" type="tel" autocomplete="tel-national" inputmode="tel" required placeholder="(21) 99999-9999" maxlength="15">
+        </div>
+        <div class="hp" aria-hidden="true"><input type="text" name="hp" tabindex="-1" autocomplete="off"></div>
+        <button class="botao" type="submit" id="botao-enviar">Garantir minha vaga</button>
+        <p class="form__msg" id="form-msg" role="alert" aria-live="polite"></p>
+        <p class="form__aviso">Seus dados são usados só para os avisos do evento.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============ AS 3 AULAS ============ -->
+<section class="s-madeira aulas">
+  <div class="wrap wrap--largo">
+    <div class="aulas__intro">
+      <p class="mao">uma aula por dia, liberada às 6h</p>
+      <h2 class="titulo-secao">O que você vai aprender</h2>
+    </div>
+
+    <div class="aulas__lista">
+      <article class="aula">
+        <img class="aula__capa" src="images/aula-1.jpg" alt="Aula 1, Segunda, 7/12: Por que o seu banho de ervas não funciona" loading="lazy" width="1672" height="941">
+        <div class="aula__corpo">
+          <span class="aula__data rotulo">Aula 1 · Segunda, 7/12 · 6h</span>
+          <h3 class="so-leitor">Por que o seu banho de ervas não funciona</h3>
+          <ul><li>A missão das plantas aqui no Ayé</li><li>Por que não basta jogar as folhas na água</li><li>A conversa de planta: como acordar as plantas antes de usar</li><li>Demonstração: o banho de colônia (<i>Alpinia zerumbet</i>)</li></ul>
+          <div class="leva"><span class="rotulo">Você leva</span>A técnica de acordar as plantas, a missão das plantas e o banho de colônia: para que serve e como fazer.</div>
+        </div>
+      </article>
+      <article class="aula">
+        <img class="aula__capa" src="images/aula-2.jpg" alt="Aula 2, Terça, 8/12: O Orí e as folhas" loading="lazy" width="1672" height="941">
+        <div class="aula__corpo">
+          <span class="aula__data rotulo">Aula 2 · Terça, 8/12 · 6h</span>
+          <h3 class="so-leitor">O Orí e as folhas</h3>
+          <ul><li>Por que falar de planta é falar de Orí</li><li>Os três boldos: alumã (<i>Vernonia condensata</i>), boldo-miúdo (<i>Plectranthus ornatus</i>) e boldo-brasileiro (<i>Plectranthus barbatus</i>)</li><li>O ewé tètè, o bredo ou caruru (<i>Amaranthus</i> spp.)</li></ul>
+          <div class="leva"><span class="rotulo">Você leva</span>Quatro folhas para cuidar do Orí e como reconhecer cada uma.</div>
+        </div>
+      </article>
+      <article class="aula">
+        <img class="aula__capa" src="images/aula-3.jpg" alt="Aula 3, Quarta, 9/12: O banho da prosperidade para fechar o ano" loading="lazy" width="1672" height="941">
+        <div class="aula__corpo">
+          <span class="aula__data rotulo">Aula 3 · Quarta, 9/12 · 6h</span>
+          <h3 class="so-leitor">O banho da prosperidade para fechar o ano</h3>
+          <ul><li>A Ivy monta um banho de prosperidade ao vivo</li><li>O porquê da escolha de cada planta</li><li>O preparo completo, para você fazer em casa no fim do ano</li></ul>
+          <div class="leva"><span class="rotulo">Você leva</span>O banho de prosperidade de fim de ano, com o porquê de cada folha.</div>
+        </div>
+      </article>
+    </div>
+
+    <div class="aulas__cta"><a class="botao" href="/erveira#inscricao">Quero participar gratuitamente</a></div>
+  </div>
+</section>
+
+<!-- ============ QUEM ENSINA ============ -->
+<section class="s-papel">
+  <div class="wrap wrap--largo ivy">
+    <figure class="colada">
+      <img src="images/ivy.jpg" alt="Ivy Ifálèyẹ sorrindo, cercada de ervas e flores" loading="lazy" width="800" height="1000">
+      <figcaption>Ivy Ifálèyẹ</figcaption>
+    </figure>
+    <div>
+      <p class="mao">quem ensina</p>
+      <h2 class="titulo-secao">Ivy Ifálèyẹ</h2>
+      <p><strong>Ivy Ifálèyẹ é engenheira agrônoma, herbologista, mestra em saboaria ancestral e design de cosméticos naturais, além de cultuadora de Orixá.</strong></p>
+      <p>Aprendeu com a avó Zezé, rezadeira, e une o nome científico e o fundamento da mesma folha: ciência e tradição lado a lado.</p>
+      <p>É fundadora da Ladê Boticário Ancestral e da Escola Ivy Ifálèyẹ de Saberes Ancestrais.</p>
+      <p class="ivy__fecho">No <b>Despertar do Erveir@</b>, ela te ensina, em 3 aulas gratuitas, a usar as folhas com fundamento e fazer o seu banho de ervas funcionar de verdade.</p>
+      <a class="botao botao--ivy" href="/erveira#inscricao">Quero participar gratuitamente</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- Barra fixa no celular: aparece depois do topo e some quando o formulário está na tela -->
+<a class="barra-fixa" id="barra-fixa" href="/erveira#inscricao" aria-hidden="true" tabindex="-1">
+  <span><b>Gratuito</b> · 7, 8 e 9 de dezembro</span><span class="barra-fixa__cta">Quero participar</span>
+</a>
+
+<!-- ============ RODAPÉ ============ -->
+<footer>
+  <div class="wrap">
+    <svg class="carimbo" viewBox="0 0 120 120" role="img" aria-label="Ivy Ifálèyẹ · Saberes Ancestrais">
+      <defs><path id="circulo" d="M60,60 m-45,0 a45,45 0 1,1 90,0 a45,45 0 1,1 -90,0"/></defs>
+      <circle cx="60" cy="60" r="57" fill="none" stroke="currentColor" stroke-width="1.5"/>
+      <circle cx="60" cy="60" r="33" fill="none" stroke="currentColor" stroke-width="1"/>
+      <text fill="currentColor" font-family="DM Sans, sans-serif" font-weight="700" font-size="9.5" letter-spacing="1.5">
+        <textPath href="#circulo" textLength="278" lengthAdjust="spacing">IVY IFÁLÈYẸ · SABERES ANCESTRAIS ·</textPath>
+      </text>
+      <path d="M60 44 C 70 50, 72 64, 60 77 C 48 64, 50 50, 60 44 Z" fill="none" stroke="currentColor" stroke-width="1.6"/>
+      <path d="M60 48 L60 82" stroke="currentColor" stroke-width="1.2"/>
+    </svg>
+    <p>Ivy Ifálèyẹ · Saberes Ancestrais</p>
+    <p><a href="https://www.instagram.com/ivyifaleye/" target="_blank" rel="noopener">@ivyifaleye</a></p>
+    <small>O Despertar do Erveir@ · 7, 8 e 9 de dezembro de 2026</small>
+  </div>
+</footer>
+
+<script>
+(function(){
+  const form = document.getElementById('form-inscricao');
+  const msg = document.getElementById('form-msg');
+  const botao = document.getElementById('botao-enviar');
+  const nome = document.getElementById('nome');
+  const email = document.getElementById('email');
+  const zap = document.getElementById('whatsapp');
+  let sending = false;
+  zap.addEventListener('input', () => {
+    const d = zap.value.replace(/\D/g, '').slice(0, 11);
+    zap.value = d.length <= 2 ? d : '(' + d.slice(0, 2) + ') ' + (d.length > 7 ? d.slice(2, -4) + '-' + d.slice(-4) : d.slice(2));
+  });
+  function erro(campo, texto){
+    msg.textContent = texto;
+    if (campo) { campo.setAttribute('aria-invalid', 'true'); campo.focus(); }
+  }
+  form.addEventListener('submit', async (event) => {
+    event.preventDefault();
+    if (sending) return;
+    [nome, email, zap].forEach(c => c.removeAttribute('aria-invalid'));
+    msg.textContent = '';
+    if (form.elements.hp.value) return;
+    const dados = { nome: nome.value.trim(), email: email.value.trim(), whatsapp: zap.value, hp: form.elements.hp.value };
+    if (dados.nome.length < 2) return erro(nome, 'Escreva o seu nome.');
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(dados.email)) return erro(email, 'Confira o seu e-mail.');
+    if (!/^[1-9]\d{9,10}$/.test(zap.value.replace(/\D/g, ''))) return erro(zap, 'Escreva o seu WhatsApp com DDD.');
+    sending = true;
+    botao.disabled = true;
+    botao.textContent = 'Enviando...';
+    try {
+      const response = await fetch('/api/erveira-inscricao', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(dados), signal: AbortSignal.timeout(22000) });
+      const result = await response.json();
+      if (!response.ok || !result.ok) {
+        erro({ nome, email, whatsapp: zap }[result.field], result.message || 'Não conseguimos concluir sua inscrição. Tente novamente.');
+        return;
+      }
+      try { sessionStorage.setItem('erveira-primeiro-nome', dados.nome.split(/\s+/)[0]); } catch {}
+      location.assign('/erveira/obrigado' + (result.pending ? '?confirmacao=pendente' : ''));
+    } catch {
+      erro(null, 'A conexão falhou. Confira a internet e tente novamente.');
+    } finally {
+      sending = false;
+      botao.disabled = false;
+      botao.textContent = 'Garantir minha vaga';
+    }
+  });
+})();
+
+// Barra fixa no celular
+(function(){
+  const barra = document.getElementById("barra-fixa");
+  const topo = document.getElementById("topo");
+  const form = document.getElementById("inscricao");
+  if (!("IntersectionObserver" in window)) return;
+  let topoVisivel = true, formVisivel = false;
+  const atualizar = () => {
+    const visible = !topoVisivel && !formVisivel;
+    barra.classList.toggle('visivel', visible);
+    barra.setAttribute('aria-hidden', String(!visible));
+    barra.tabIndex = visible ? 0 : -1;
+  };
+  new IntersectionObserver(([e]) => { topoVisivel = e.isIntersecting; atualizar(); }).observe(topo);
+  new IntersectionObserver(([e]) => { formVisivel = e.isIntersecting; atualizar(); }, { threshold:0.15 }).observe(form);
+})();
+</script>
+</body>
+</html>
