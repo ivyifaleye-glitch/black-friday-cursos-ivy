@@ -18,7 +18,22 @@
     },
     {
       "source": "/erveira",
-      "destination": "https://mailchi.mp/5ba3b9eb87fa/o-despertar-da-erveira-inscries-dezembro-2026"
+      "destination": "/erveira/index.html"
+    },
+    {
+      "source": "/erveira/obrigado",
+      "destination": "/erveira/obrigado.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/erveira/obrigado",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex"
+        }
+      ]
     }
   ]
 }
