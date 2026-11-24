@@ -203,6 +203,21 @@
   @media (min-width:900px){ .barra-fixa{ display:none; } }
 
   @media (prefers-reduced-motion:reduce){ html{ scroll-behavior:auto; } }
+
+  /* Foto e chamada compõem um único banner na primeira tela do celular. */
+  @media (max-width:899px){
+    .hero__foto{height:clamp(210px,32svh,260px);aspect-ratio:auto;}
+    .hero__foto img{object-position:center top;}
+    .hero__foto::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(to bottom,transparent 65%,var(--raiz) 100%);}
+    .hero__conteudo{margin-top:-24px;padding:0 24px 28px;}
+    .hero__chamada{font-size:28px;margin-bottom:8px;}
+    .hero .marca__topo{font-size:28px;}
+    .hero .marca__nome{font-size:72px;}
+    .hero .marca__flor{top:18px;}
+    .hero__linha{font-size:12px;line-height:1.45;letter-spacing:.12em;margin-top:12px;}
+    .hero__sub{font-size:16px;line-height:1.45;margin:12px 0 18px;}
+    .hero__conteudo>.botao{width:100%;min-height:52px;font-size:12px;letter-spacing:.08em;padding:0 12px;}
+  }
 </style>
 </head>
 <body>
@@ -211,8 +226,8 @@
 <header class="hero" id="topo">
   <div class="hero__foto">
     <picture>
-      <source media="(min-width:900px)" srcset="images/topo.jpg">
-      <img src="images/topo-celular.jpg" alt="Ivy Ifálèyẹ tocando uma samambaia no jardim" fetchpriority="high"
+      <source media="(min-width:900px)" srcset="images/ivy.jpg">
+      <img src="images/ivy.jpg" alt="Ivy Ifálèyẹ sorrindo em preto e branco, em uma colagem colorida com ervas e flores" fetchpriority="high"
            onerror="document.getElementById('topo').classList.add('hero--sem-foto')">
     </picture>
   </div>
@@ -319,7 +334,7 @@
 <section class="s-papel">
   <div class="wrap wrap--largo ivy">
     <figure class="colada">
-      <img src="images/ivy.jpg" alt="Ivy Ifálèyẹ sorrindo, cercada de ervas e flores" loading="lazy" width="800" height="1000">
+      <img src="images/topo-celular.jpg" alt="Ivy Ifálèyẹ tocando uma samambaia no jardim" loading="lazy" width="800" height="1000">
       <figcaption>Ivy Ifálèyẹ</figcaption>
     </figure>
     <div>
