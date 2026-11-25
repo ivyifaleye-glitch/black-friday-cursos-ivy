@@ -14,7 +14,7 @@
 <meta property="og:image" content="https://escolaivyifaleye.com.br/erveira/images/2026-11-25/og.jpg">
 <meta property="og:locale" content="pt_BR">
 <link rel="canonical" href="https://escolaivyifaleye.com.br/erveira">
-<base href="/erveira/">
+<base href="/erveira">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -161,7 +161,7 @@
 
   /* ---------- FORMULÁRIO ---------- */
   .inscricao .wrap{ max-width:calc(var(--texto) + 2*var(--lateral)); }
-  .inscricao__caixa{ border:2px dashed var(--girassol); padding:32px 22px; background:#FFFBF2; }
+  .inscricao__caixa{ scroll-margin-top:16px; border:2px dashed var(--girassol); padding:32px 22px; background:#FFFBF2; }
   @media (min-width:900px){ .inscricao__caixa{ padding:48px 48px; } }
   .inscricao .titulo-secao{ margin-bottom:8px; }
   .inscricao__sub{ margin-bottom:28px; }
@@ -278,8 +278,8 @@
 <header class="hero" id="topo">
   <div class="hero__foto">
     <picture>
-      <source media="(min-width:900px)" srcset="images/2026-11-25/topo.jpg">
-      <img src="images/2026-11-25/topo-celular.jpg" alt="Ivy Ifálèyẹ sorrindo, cercada de ervas e flores" fetchpriority="high"
+      <source media="(min-width:900px)" srcset="/erveira/images/2026-11-25/topo.jpg">
+      <img src="/erveira/images/2026-11-25/topo-celular.jpg" alt="Ivy Ifálèyẹ sorrindo, cercada de ervas e flores" fetchpriority="high"
            onerror="document.getElementById('topo').classList.add('hero--sem-foto')">
     </picture>
   </div>
@@ -293,14 +293,14 @@
     <p class="hero__linha"><b>7, 8 e 9 de dezembro</b> <span>·</span> <b>online e gratuito</b></p>
     <p class="hero__sub">Mergulhe no poder dos banhos de ervas para cuidar de si e dos seus com autonomia, axé e segurança.</p>
     <p class="hero__pilares">Sabedoria ancestral <span>•</span> Conhecimento botânico <span>•</span> Fitoenergética</p>
-    <a class="botao" href="/erveira#inscricao">Quero participar gratuitamente</a>
+    <a class="botao" href="#inscricao">Quero participar gratuitamente</a>
   </div>
 </header>
 
 <main>
 
 <!-- ============ 02 PARA QUEM É · 03 INFORMAÇÕES · 04 INSCRIÇÃO ============ -->
-<section class="s-papel inscricao" id="inscricao">
+<section class="s-papel inscricao">
   <div class="wrap">
     <div class="para-quem">
       <h2 class="titulo-secao">O Despertar da Erveir@ é para você que…</h2>
@@ -321,7 +321,7 @@
       <li><span class="fatos__rot">Lives tira-dúvidas</span><span class="fatos__num">19h</span><span>nos três dias, no Instagram</span></li>
     </ul>
 
-    <div class="inscricao__caixa">
+    <div class="inscricao__caixa" id="inscricao">
       <p class="mao">100% online e gratuito</p>
       <h2 class="titulo-secao">Garanta sua vaga</h2>
       <p class="inscricao__sub"><b>Dê o primeiro passo para desenvolver sua própria sabedoria com as plantas.</b><br>Inscreva-se gratuitamente para receber os links das três aulas e os materiais do evento O Despertar da Erveir@.</p>
@@ -367,7 +367,7 @@
 
     <div class="aulas__lista">
       <article class="aula">
-        <figure class="colada aula__foto"><img src="images/2026-11-25/aula-1-foto.jpg" alt="Mãos segurando folhas frescas sobre uma bacia com água" loading="lazy" width="684" height="720"></figure>
+        <figure class="colada aula__foto"><img src="/erveira/images/2026-11-25/aula-1-foto.jpg" alt="Mãos segurando folhas frescas sobre uma bacia com água" loading="lazy" width="684" height="720"></figure>
         <div class="aula__corpo">
           <span class="aula__data rotulo">Aula 1 · Segunda-feira · 07/12</span>
           <h3 class="aula__titulo">O poder das ervas que já moram na sua casa</h3>
@@ -379,7 +379,7 @@
         </div>
       </article>
       <article class="aula">
-        <figure class="colada aula__foto"><img src="images/2026-11-25/aula-2-foto.jpg" alt="Folhas frescas organizadas sobre um pano de algodão" loading="lazy" width="684" height="720"></figure>
+        <figure class="colada aula__foto"><img src="/erveira/images/2026-11-25/aula-2-foto.jpg" alt="Folhas frescas organizadas sobre um pano de algodão" loading="lazy" width="684" height="720"></figure>
         <div class="aula__corpo">
           <span class="aula__data rotulo">Aula 2 · Terça-feira · 08/12</span>
           <h3 class="aula__titulo">Orí: o sagrado que habita em você</h3>
@@ -391,7 +391,7 @@
         </div>
       </article>
       <article class="aula">
-        <figure class="colada aula__foto"><img src="images/2026-11-25/aula-3-foto.jpg" alt="Mãos preparando ervas em uma bacia de barro, entre girassóis" loading="lazy" width="684" height="720"></figure>
+        <figure class="colada aula__foto"><img src="/erveira/images/2026-11-25/aula-3-foto.jpg" alt="Mãos preparando ervas em uma bacia de barro, entre girassóis" loading="lazy" width="684" height="720"></figure>
         <div class="aula__corpo">
           <span class="aula__data rotulo">Aula 3 · Quarta-feira · 09/12</span>
           <h3 class="aula__titulo">Assuma sua herança: o caminho da erveira</h3>
@@ -410,7 +410,7 @@
       <p>Nos três dias do evento, teremos lives tira-dúvidas no Instagram <b>@ivyifaleye</b> para aprofundar os conhecimentos de cada aula.</p></div>
     </div>
 
-    <div class="aulas__cta"><a class="botao" href="/erveira#inscricao">Quero participar gratuitamente</a></div>
+    <div class="aulas__cta"><a class="botao" href="#inscricao">Quero participar gratuitamente</a></div>
   </div>
 </section>
 
@@ -418,7 +418,7 @@
 <section class="s-papel">
   <div class="wrap wrap--largo ivy">
     <figure class="colada">
-      <img src="images/2026-11-25/ivy.jpg" alt="Ivy Ifálèyẹ tocando uma samambaia no jardim" loading="lazy" width="800" height="1000">
+      <img src="/erveira/images/2026-11-25/ivy.jpg" alt="Ivy Ifálèyẹ tocando uma samambaia no jardim" loading="lazy" width="800" height="1000">
       <figcaption>Ivy Ifálèyẹ</figcaption>
     </figure>
     <div>
@@ -427,7 +427,7 @@
       <p>Sou engenheira agrônoma, especializada em cultivo orgânico e agroecológico de plantas medicinais, erveira, alquimista e fundadora da Ladê Boticário Ancestral. Sou neta de uma rezadeira e benzedeira e cresci aprendendo sobre o poder das plantas com minha avó Zezé.</p>
       <p>Ao longo da minha trajetória, integrei o conhecimento científico aos saberes afroancestrais, à fitoenergética e à espiritualidade, tornando-me referência em cosmética afro-ritualística. Hoje, tenho <b>mais de mil alunos</b> na minha escola, onde compartilho esses conhecimentos.</p>
       <p class="ivy__fecho">Acredito que os saberes ancestrais são transformadores e precisam continuar vivos em nosso cotidiano. Por isso, preparei três aulas gratuitas para te ensinar a utilizar a sabedoria ancestral das plantas no cuidado de si e dos seus, com autonomia, axé e segurança.</p>
-      <a class="botao botao--ivy" href="/erveira#inscricao">Quero participar gratuitamente</a>
+      <a class="botao botao--ivy" href="#inscricao">Quero participar gratuitamente</a>
     </div>
   </div>
 </section>
@@ -439,14 +439,14 @@
     <p class="fechamento__texto">Agora, você pode escolher fazer dela uma parte viva da sua própria história.</p>
     <p class="fechamento__chamada">Venha <span class="mao">despertar a erveira</span> que existe em você.</p>
     <p class="hero__linha fechamento__linha"><b>7, 8 e 9 de dezembro</b> <span>·</span> <b>online e gratuito</b></p>
-    <a class="botao" href="/erveira#inscricao">Quero participar gratuitamente</a>
+    <a class="botao" href="#inscricao">Quero participar gratuitamente</a>
   </div>
 </section>
 
 </main>
 
 <!-- Barra fixa no celular: aparece depois do topo e some quando o formulário está na tela -->
-<a class="barra-fixa" id="barra-fixa" href="/erveira#inscricao" aria-hidden="true" tabindex="-1">
+<a class="barra-fixa" id="barra-fixa" href="#inscricao" aria-hidden="true" tabindex="-1">
   <span><b>Gratuito</b> · 7, 8 e 9 de dezembro</span><span class="barra-fixa__cta">Quero participar</span>
 </a>
 
@@ -484,7 +484,7 @@
   });
   function erro(campo, texto){
     msg.textContent = texto;
-    if (campo) { campo.setAttribute('aria-invalid', 'true'); campo.focus(); }
+    if (campo) { campo.setAttribute('aria-invalid', 'true'); }
   }
   form.addEventListener('submit', async (event) => {
     event.preventDefault();
