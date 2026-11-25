@@ -4,14 +4,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>O Despertar da Erveir@ · evento gratuito com Ivy Ifálèyẹ · 7, 8 e 9 de dezembro</title>
-<meta name="description" content="3 aulas gratuitas para você usar as folhas com fundamento e fazer o seu banho de ervas funcionar de verdade. Com Ivy Ifálèyẹ, de 7 a 9 de dezembro.">
+<meta name="description" content="Três aulas gratuitas com Ivy Ifálèyẹ para cuidar de si e dos seus com a sabedoria ancestral das plantas, com autonomia, axé e segurança. 7, 8 e 9 de dezembro.">
 <meta name="theme-color" content="#2A1A0E">
 
 <!-- Compartilhamento (WhatsApp, Instagram, Facebook). Troque og.jpg por uma imagem 1200x630. -->
 <meta property="og:type" content="website">
 <meta property="og:title" content="O Despertar da Erveir@ · evento gratuito">
-<meta property="og:description" content="3 aulas para você usar as folhas com fundamento e fazer o seu banho de ervas funcionar de verdade. 7, 8 e 9 de dezembro.">
-<meta property="og:image" content="https://escolaivyifaleye.com.br/erveira/images/og.jpg">
+<meta property="og:description" content="Mergulhe no poder dos banhos de ervas para cuidar de si e dos seus com autonomia, axé e segurança. 7, 8 e 9 de dezembro, online e gratuito.">
+<meta property="og:image" content="https://escolaivyifaleye.com.br/erveira/images/2026-11-25/og.jpg">
 <meta property="og:locale" content="pt_BR">
 <link rel="canonical" href="https://escolaivyifaleye.com.br/erveira">
 <base href="/erveira/">
@@ -202,8 +202,57 @@
      letter-spacing:.1em; font-size:13px; padding:0 16px; min-height:44px; display:inline-flex; align-items:center; white-space:nowrap; }
   @media (min-width:900px){ .barra-fixa{ display:none; } }
 
-  @media (prefers-reduced-motion:reduce){ html{ scroll-behavior:auto; } }
 
+  /* ---------- REDAÇÃO NOVA (dez/2026) ---------- */
+  .hero__sub{ margin-bottom:10px; }
+  .hero__pilares{ font-size:15px; color:rgba(246,238,223,.78); margin:0 0 28px; }
+  .hero__pilares span{ color:rgba(246,238,223,.45); padding:0 6px; }
+  @media (min-width:900px){ .hero__pilares{ font-size:16px; } }
+
+  .lista-folha{ list-style:none; margin:0 0 8px; padding:0; }
+  .lista-folha li{ position:relative; padding:0 0 14px 34px; font-size:18px; line-height:1.5; }
+  .lista-folha li::before{ content:""; position:absolute; left:0; top:5px; width:18px; height:18px;
+     background:var(--folha); border-radius:0 100% 0 100%; transform:rotate(-8deg); }
+  @media (min-width:900px){ .lista-folha li{ font-size:19px; } }
+
+  .fatos li{ display:flex; flex-direction:column; align-items:center; gap:2px; }
+  .fatos__rot{ font-weight:700; text-transform:uppercase; letter-spacing:.1em; font-size:11px; color:rgba(246,238,223,.7); margin-bottom:6px; }
+  @media (min-width:900px){ .fatos__rot{ font-size:12px; } }
+  @media (max-width:520px){ .fatos{ grid-template-columns:1fr; } .fatos li{ padding:14px; } }
+
+  .flex .wrap{ text-align:center; }
+  .flex p{ color:rgba(246,238,223,.88); }
+  .flex b{ color:var(--papel); }
+
+  .aula{ grid-template-columns:1fr; }
+  .aula__foto{ margin:28px auto 0; max-width:300px; padding:10px 10px 10px; }
+  .aula__foto img{ aspect-ratio:684/720; }
+  .aula:nth-child(even) .aula__foto{ transform:rotate(2deg); }
+  @media (min-width:900px){
+    .aula{ grid-template-columns:360px minmax(0,1fr); align-items:start; }
+    .aula__foto{ margin:44px 0 44px 40px; width:calc(100% - 40px); max-width:none; }
+    .aula__corpo{ padding:40px 44px 40px 36px; }
+  }
+  .aula__titulo{ font-size:28px; color:var(--madeira); margin-bottom:10px; }
+  @media (min-width:900px){ .aula__titulo{ font-size:34px; } }
+  .aula__gancho{ font-family:var(--serif); font-style:italic; font-size:18px; line-height:1.4; color:var(--tinta); opacity:.85; }
+  .aula__rot{ display:block; color:var(--folha); font-size:13px; margin:6px 0 10px; }
+  .aula__yt{ display:block; margin-top:14px; font-size:14px; color:rgba(43,42,32,.7); }
+
+  .ao-vivo{ display:flex; gap:20px; align-items:center; margin-top:40px; border:2px dashed var(--girassol); padding:22px 24px; }
+  .ao-vivo__hora{ font-family:var(--serif); font-size:48px; color:var(--girassol); line-height:1; flex:none; }
+  .ao-vivo .rotulo{ display:block; color:var(--girassol); margin-bottom:6px; }
+  .ao-vivo p{ margin:0; color:var(--papel); }
+
+  .fechamento .wrap{ text-align:center; }
+  .fechamento__texto{ font-family:var(--serif); font-size:24px; line-height:1.35; color:var(--papel); margin-bottom:10px; }
+  .fechamento__chamada{ font-family:var(--serif); font-size:28px; line-height:1.3; color:var(--papel); margin:28px 0 18px; }
+  .fechamento__chamada .mao{ font-size:44px; color:var(--girassol); transform:rotate(-2deg); }
+  @media (min-width:900px){ .fechamento__texto{ font-size:30px; } .fechamento__chamada{ font-size:34px; } .fechamento__chamada .mao{ font-size:56px; } }
+  .fechamento__linha{ margin:0 0 28px; }
+  .fechamento + footer{ border-top:1px solid rgba(246,238,223,.12); }
+
+  @media (prefers-reduced-motion:reduce){ html{ scroll-behavior:auto; } }
   /* Foto e chamada compõem um único banner na primeira tela do celular. */
   @media (max-width:899px){
     .hero{display:flex;flex-direction:column;height:100svh;min-height:600px;}
@@ -219,6 +268,8 @@
     .hero__sub{font-size:16px;line-height:1.45;margin:12px 0 18px;}
     .hero__conteudo>.botao{width:100%;min-height:52px;font-size:12px;letter-spacing:.08em;padding:0 12px;}
   }
+
+  @media(max-width:899px){.hero__pilares{font-size:12px;line-height:1.4;margin:0 0 16px;}.hero__pilares span{padding:0 3px;}}
 </style>
 </head>
 <body>
@@ -227,8 +278,8 @@
 <header class="hero" id="topo">
   <div class="hero__foto">
     <picture>
-      <source media="(min-width:900px)" srcset="images/ivy.jpg">
-      <img src="images/ivy.jpg" alt="Ivy Ifálèyẹ sorrindo em preto e branco, em uma colagem colorida com ervas e flores" fetchpriority="high"
+      <source media="(min-width:900px)" srcset="images/2026-11-25/topo.jpg">
+      <img src="images/2026-11-25/topo-celular.jpg" alt="Ivy Ifálèyẹ sorrindo, cercada de ervas e flores" fetchpriority="high"
            onerror="document.getElementById('topo').classList.add('hero--sem-foto')">
     </picture>
   </div>
@@ -240,33 +291,40 @@
       <span class="marca__nome" aria-hidden="true">Erveir@<svg class="marca__flor" viewBox="0 0 40 40" aria-hidden="true"><g fill="#F0A000"><ellipse cx="20" cy="7" rx="4" ry="7"/><ellipse cx="20" cy="7" rx="4" ry="7" transform="rotate(45 20 20)"/><ellipse cx="20" cy="7" rx="4" ry="7" transform="rotate(90 20 20)"/><ellipse cx="20" cy="7" rx="4" ry="7" transform="rotate(135 20 20)"/><ellipse cx="20" cy="7" rx="4" ry="7" transform="rotate(180 20 20)"/><ellipse cx="20" cy="7" rx="4" ry="7" transform="rotate(225 20 20)"/><ellipse cx="20" cy="7" rx="4" ry="7" transform="rotate(270 20 20)"/><ellipse cx="20" cy="7" rx="4" ry="7" transform="rotate(315 20 20)"/></g><circle cx="20" cy="20" r="7" fill="#6B4526"/></svg></span>
     </h1>
     <p class="hero__linha"><b>7, 8 e 9 de dezembro</b> <span>·</span> <b>online e gratuito</b></p>
-    <p class="hero__sub">3 aulas para você usar as folhas com fundamento e fazer o seu banho de ervas funcionar de verdade.</p>
+    <p class="hero__sub">Mergulhe no poder dos banhos de ervas para cuidar de si e dos seus com autonomia, axé e segurança.</p>
+    <p class="hero__pilares">Sabedoria ancestral <span>•</span> Conhecimento botânico <span>•</span> Fitoenergética</p>
     <a class="botao" href="/erveira#inscricao">Quero participar gratuitamente</a>
   </div>
 </header>
 
 <main>
 
-<!-- ============ PROMESSA + INSCRIÇÃO (mesma ordem da página do Sabão da Costa: promessa, gratuito, formulário) ============ -->
+<!-- ============ 02 PARA QUEM É · 03 INFORMAÇÕES · 04 INSCRIÇÃO ============ -->
 <section class="s-papel inscricao" id="inscricao">
   <div class="wrap">
     <div class="para-quem">
-      <h2 class="titulo-secao">Para quem é</h2>
-      <p>Para mulheres e homens de axé, da Umbanda e do Candomblé, que usam folha toda semana e sentem que ainda não compreendem profundamente o que fazem.</p>
-      <p class="destaque">Sua avó te ensinou o que fazer com as folhas. Aqui você aprende o porquê.</p>
+      <h2 class="titulo-secao">O Despertar da Erveir@ é para você que…</h2>
+      <ul class="lista-folha">
+        <li>Já utiliza ervas em seus banhos e práticas de autocuidado, mas deseja compreender os fundamentos por trás desses saberes.</li>
+        <li>Sente uma conexão com as plantas e quer aprender a reconhecer suas propriedades e possibilidades de utilização.</li>
+        <li>Está cansada de depender de receitas prontas e deseja ter autonomia para escolher, combinar e preparar suas próprias ervas.</li>
+        <li>Recebeu ensinamentos da sua mãe, da sua avó ou da sua comunidade religiosa e sente vontade de aprofundar e dar continuidade a essa sabedoria.</li>
+        <li>Deseja incorporar as plantas à sua rotina de autocuidado, ao cuidado da sua família e às suas práticas espirituais.</li>
+        <li>Atua com terapias integrativas e deseja ampliar seus conhecimentos sobre a utilização ancestral e fitoenergética das plantas.</li>
+      </ul>
+      <p class="destaque">Talvez sua avó tenha te ensinado o que fazer com as folhas. Agora é hora de compreender o porquê.</p>
     </div>
 
-    <ul class="fatos" aria-label="Como funciona">
-      <li><span class="fatos__num">7 · 8 · 9</span><span>de dezembro</span></li>
-      <li><span class="fatos__num">6h</span><span>aula gravada no YouTube</span></li>
-      <li><span class="fatos__num">19h</span><span>live de dúvidas no Instagram</span></li>
+    <ul class="fatos" aria-label="Informações do evento">
+      <li><span class="fatos__rot">Datas</span><span class="fatos__num">7, 8 e 9</span><span>de dezembro</span></li>
+      <li><span class="fatos__rot">Aulas gravadas</span><span class="fatos__num">6h</span><span>no YouTube, a partir das 6h da manhã</span></li>
+      <li><span class="fatos__rot">Lives tira-dúvidas</span><span class="fatos__num">19h</span><span>nos três dias, no Instagram</span></li>
     </ul>
 
     <div class="inscricao__caixa">
       <p class="mao">100% online e gratuito</p>
-      <h2 class="titulo-secao">Garanta a sua vaga</h2>
-      <p class="inscricao__sub">Você recebe o link de cada aula e o material do dia pelo grupo do evento no WhatsApp.</p>
-
+      <h2 class="titulo-secao">Garanta sua vaga</h2>
+      <p class="inscricao__sub"><b>Dê o primeiro passo para desenvolver sua própria sabedoria com as plantas.</b><br>Inscreva-se gratuitamente para receber os links das três aulas e os materiais do evento O Despertar da Erveir@.</p>
       <form class="form" id="form-inscricao" novalidate>
         <div class="campo">
           <label class="rotulo" for="nome">Seu nome</label>
@@ -289,7 +347,17 @@
   </div>
 </section>
 
-<!-- ============ AS 3 AULAS ============ -->
+<!-- ============ 05 FLEXIBILIDADE ============ -->
+<section class="s-raiz flex">
+  <div class="wrap">
+    <h2 class="titulo-secao">Aprenda no seu tempo, de onde estiver.</h2>
+    <p>Nos dias 7, 8 e 9 de dezembro, uma nova aula será disponibilizada a partir das <b>6h da manhã</b>.</p>
+    <p>Você poderá assistir no horário que melhor se encaixar na sua rotina, no conforto da sua casa, durante o período de disponibilidade das aulas.</p>
+    <p>Às <b>19h</b>, teremos um encontro ao vivo no Instagram para aprofundar os aprendizados do dia e esclarecer suas dúvidas.</p>
+  </div>
+</section>
+
+<!-- ============ 06 O QUE VOCÊ VAI APRENDER ============ -->
 <section class="s-madeira aulas">
   <div class="wrap wrap--largo">
     <div class="aulas__intro">
@@ -299,54 +367,79 @@
 
     <div class="aulas__lista">
       <article class="aula">
-        <img class="aula__capa" src="images/aula-1.jpg" alt="Aula 1, Segunda, 7/12: Por que o seu banho de ervas não funciona" loading="lazy" width="1672" height="941">
+        <figure class="colada aula__foto"><img src="images/2026-11-25/aula-1-foto.jpg" alt="Mãos segurando folhas frescas sobre uma bacia com água" loading="lazy" width="684" height="720"></figure>
         <div class="aula__corpo">
-          <span class="aula__data rotulo">Aula 1 · Segunda, 7/12 · 6h</span>
-          <h3 class="so-leitor">Por que o seu banho de ervas não funciona</h3>
-          <ul><li>A missão das plantas aqui no Ayé</li><li>Por que não basta jogar as folhas na água</li><li>A conversa de planta: como acordar as plantas antes de usar</li><li>Demonstração: o banho de colônia (<i>Alpinia zerumbet</i>)</li></ul>
-          <div class="leva"><span class="rotulo">Você leva</span>A técnica de acordar as plantas, a missão das plantas e o banho de colônia: para que serve e como fazer.</div>
+          <span class="aula__data rotulo">Aula 1 · Segunda-feira · 07/12</span>
+          <h3 class="aula__titulo">O poder das ervas que já moram na sua casa</h3>
+          <p class="aula__gancho">Você sabia que algumas das plantas que utiliza diariamente na sua cozinha também fazem parte de práticas ancestrais de cuidado?</p>
+          <span class="rotulo aula__rot">O que você vai descobrir</span>
+          <ul><li>Por que alguns banhos de ervas não dão certo.</li><li>Os poderes do alecrim (<i>Salvia rosmarinus</i>), do manjericão (<i>Ocimum basilicum</i>) e do louro (<i>Laurus nobilis</i>).</li><li>Os territórios das plantas e os fundamentos da utilização das ervas.</li><li>Como despertar as plantas através da conversa de planta.</li></ul>
+          <div class="leva"><span class="rotulo">Você leva</span>O aprendizado de como despertar as ervas através da conversa de planta e preparar um banho com fundamento, utilizando plantas que talvez você já tenha em casa.</div>
+          <span class="aula__yt">Disponível no YouTube a partir das 6h</span>
         </div>
       </article>
       <article class="aula">
-        <img class="aula__capa" src="images/aula-2.jpg" alt="Aula 2, Terça, 8/12: O Orí e as folhas" loading="lazy" width="1672" height="941">
+        <figure class="colada aula__foto"><img src="images/2026-11-25/aula-2-foto.jpg" alt="Folhas frescas organizadas sobre um pano de algodão" loading="lazy" width="684" height="720"></figure>
         <div class="aula__corpo">
-          <span class="aula__data rotulo">Aula 2 · Terça, 8/12 · 6h</span>
-          <h3 class="so-leitor">O Orí e as folhas</h3>
-          <ul><li>Por que falar de planta é falar de Orí</li><li>Os três boldos: alumã (<i>Vernonia condensata</i>), boldo-miúdo (<i>Plectranthus ornatus</i>) e boldo-brasileiro (<i>Plectranthus barbatus</i>)</li><li>O ewé tètè, o bredo ou caruru (<i>Amaranthus</i> spp.)</li></ul>
-          <div class="leva"><span class="rotulo">Você leva</span>Quatro folhas para cuidar do Orí e como reconhecer cada uma.</div>
+          <span class="aula__data rotulo">Aula 2 · Terça-feira · 08/12</span>
+          <h3 class="aula__titulo">Orí: o sagrado que habita em você</h3>
+          <p class="aula__gancho">Você já pensou em transformar o cuidado com o seu Orí em uma prática cotidiana de autocuidado e espiritualidade?</p>
+          <span class="rotulo aula__rot">O que você vai descobrir</span>
+          <ul><li>A sabedoria ancestral do cuidado com o Orí.</li><li>Os segredos dos três boldos e suas diferentes possibilidades de utilização.</li><li>A importância de reconhecer as plantas que você utiliza.</li><li>Como incorporar o cuidado com o Orí à sua rotina.</li></ul>
+          <div class="leva"><span class="rotulo">Você leva</span>Uma prática ancestral de cuidado com o seu Orí e mais discernimento e confiança para escolher as plantas que utiliza.</div>
+          <span class="aula__yt">Disponível no YouTube a partir das 6h</span>
         </div>
       </article>
       <article class="aula">
-        <img class="aula__capa" src="images/aula-3.jpg" alt="Aula 3, Quarta, 9/12: O banho da prosperidade para fechar o ano" loading="lazy" width="1672" height="941">
+        <figure class="colada aula__foto"><img src="images/2026-11-25/aula-3-foto.jpg" alt="Mãos preparando ervas em uma bacia de barro, entre girassóis" loading="lazy" width="684" height="720"></figure>
         <div class="aula__corpo">
-          <span class="aula__data rotulo">Aula 3 · Quarta, 9/12 · 6h</span>
-          <h3 class="so-leitor">O banho da prosperidade para fechar o ano</h3>
-          <ul><li>A Ivy monta um banho de prosperidade ao vivo</li><li>O porquê da escolha de cada planta</li><li>O preparo completo, para você fazer em casa no fim do ano</li></ul>
-          <div class="leva"><span class="rotulo">Você leva</span>O banho de prosperidade de fim de ano, com o porquê de cada folha.</div>
+          <span class="aula__data rotulo">Aula 3 · Quarta-feira · 09/12</span>
+          <h3 class="aula__titulo">Assuma sua herança: o caminho da erveira</h3>
+          <p class="aula__gancho">Existe um universo de possibilidades com as plantas que vai muito além dos banhos de ervas.</p>
+          <span class="rotulo aula__rot">O que você vai descobrir</span>
+          <ul><li>O universo das ervas para além dos banhos.</li><li>As possibilidades dos benzimentos, círculos de ervas e alquimias vegetais.</li><li>A diferença entre reproduzir receitas e desenvolver sua própria sabedoria.</li><li>O caminho para assumir e aprofundar sua herança ancestral.</li></ul>
+          <div class="leva"><span class="rotulo">Você leva</span>A compreensão do caminho para desenvolver sua própria sabedoria como erveira, aprofundar sua herança ancestral e incorporar as plantas à sua vida com consciência, autonomia e axé.</div>
+          <span class="aula__yt">Disponível no YouTube a partir das 6h</span>
         </div>
       </article>
+    </div>
+
+    <div class="ao-vivo">
+      <span class="ao-vivo__hora">19h</span>
+      <div><span class="rotulo">Encontros ao vivo às 19h</span>
+      <p>Nos três dias do evento, teremos lives tira-dúvidas no Instagram <b>@ivyifaleye</b> para aprofundar os conhecimentos de cada aula.</p></div>
     </div>
 
     <div class="aulas__cta"><a class="botao" href="/erveira#inscricao">Quero participar gratuitamente</a></div>
   </div>
 </section>
 
-<!-- ============ QUEM ENSINA ============ -->
+<!-- ============ 07 QUEM VAI CONDUZIR ============ -->
 <section class="s-papel">
   <div class="wrap wrap--largo ivy">
     <figure class="colada">
-      <img src="images/topo-celular.jpg" alt="Ivy Ifálèyẹ tocando uma samambaia no jardim" loading="lazy" width="800" height="1000">
+      <img src="images/2026-11-25/ivy.jpg" alt="Ivy Ifálèyẹ tocando uma samambaia no jardim" loading="lazy" width="800" height="1000">
       <figcaption>Ivy Ifálèyẹ</figcaption>
     </figure>
     <div>
-      <p class="mao">quem ensina</p>
-      <h2 class="titulo-secao">Ivy Ifálèyẹ</h2>
-      <p><strong>Ivy Ifálèyẹ é engenheira agrônoma, herbologista, mestra em saboaria ancestral e design de cosméticos naturais, além de cultuadora de Orixá.</strong></p>
-      <p>Aprendeu com a avó Zezé, rezadeira, e une o nome científico e o fundamento da mesma folha: ciência e tradição lado a lado.</p>
-      <p>É fundadora da Ladê Boticário Ancestral e da Escola Ivy Ifálèyẹ de Saberes Ancestrais.</p>
-      <p class="ivy__fecho">No <b>Despertar da Erveir@</b>, ela te ensina, em 3 aulas gratuitas, a usar as folhas com fundamento e fazer o seu banho de ervas funcionar de verdade.</p>
+      <p class="mao">quem vai conduzir essa jornada?</p>
+      <h2 class="titulo-secao">Prazer, eu sou Ivy Ifálèyẹ.</h2>
+      <p>Sou engenheira agrônoma, especializada em cultivo orgânico e agroecológico de plantas medicinais, erveira, alquimista e fundadora da Ladê Boticário Ancestral. Sou neta de uma rezadeira e benzedeira e cresci aprendendo sobre o poder das plantas com minha avó Zezé.</p>
+      <p>Ao longo da minha trajetória, integrei o conhecimento científico aos saberes afroancestrais, à fitoenergética e à espiritualidade, tornando-me referência em cosmética afro-ritualística. Hoje, tenho <b>mais de mil alunos</b> na minha escola, onde compartilho esses conhecimentos.</p>
+      <p class="ivy__fecho">Acredito que os saberes ancestrais são transformadores e precisam continuar vivos em nosso cotidiano. Por isso, preparei três aulas gratuitas para te ensinar a utilizar a sabedoria ancestral das plantas no cuidado de si e dos seus, com autonomia, axé e segurança.</p>
       <a class="botao botao--ivy" href="/erveira#inscricao">Quero participar gratuitamente</a>
     </div>
+  </div>
+</section>
+
+<!-- ============ 08 FECHAMENTO ============ -->
+<section class="s-raiz fechamento">
+  <div class="wrap">
+    <p class="fechamento__texto">A sabedoria das plantas atravessou gerações para chegar até nós.</p>
+    <p class="fechamento__texto">Agora, você pode escolher fazer dela uma parte viva da sua própria história.</p>
+    <p class="fechamento__chamada">Venha <span class="mao">despertar a erveira</span> que existe em você.</p>
+    <p class="hero__linha fechamento__linha"><b>7, 8 e 9 de dezembro</b> <span>·</span> <b>online e gratuito</b></p>
+    <a class="botao" href="/erveira#inscricao">Quero participar gratuitamente</a>
   </div>
 </section>
 
