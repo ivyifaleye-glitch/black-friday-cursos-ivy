@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=DM+Sans:opsz,wght@9..40,400;9..40,700&family=Fraunces:opsz,wght@9..144,400&display=swap" rel="stylesheet">
 
-<!-- Espaço para o evento de conversão (ex.: fbq('track','Lead')) -->
+<!-- Lead é disparado somente após a confirmação do formulário, nunca nesta página. -->
 
 <style>
   :root{
@@ -77,6 +77,11 @@
   footer{ background:var(--raiz); color:rgba(246,238,223,.7); text-align:center; padding:40px 24px 48px; font-size:15px; }
   footer a{ color:var(--papel); text-decoration:none; border-bottom:1px solid rgba(246,238,223,.35); }
 </style>
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','954778512899267');fbq('track','PageView');
+</script>
+<script defer src="/erveira/rastreamento.js"></script>
 </head>
 <body>
 
