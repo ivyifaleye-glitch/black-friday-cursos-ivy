@@ -1,6 +1,8 @@
 const ORIGINS = new Set(['https://escolaivyifaleye.com.br', 'https://www.escolaivyifaleye.com.br']);
 const FORM_URL = 'https://eco.us15.list-manage.com/subscribe/post-json?u=da6f3a2d4fd2aef20679be707&id=375e915980&f_id=00c494e0f0';
 const EVENT_TAG_ID = '2341270';
+const { issueReceipt } = require('../lib/meta-utils');
+const { registerMember } = require('../lib/mailchimp-member');
 
 function createHandler({ fetchImpl = fetch, env = process.env } = {}) {
   return async function handler(req, res) {
@@ -32,10 +34,24 @@ function createHandler({ fetchImpl = fetch, env = process.env } = {}) {
     if (nome.length < 2 || nome.length > 100) return send(400, { ok: false, field: 'nome', message: 'Escreva o seu nome.' });
     if (email.length > 254 || !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)) return send(400, { ok: false, field: 'email', message: 'Confira o seu e-mail.' });
     if (!/^[1-9]\d{9,10}$/.test(phone)) return send(400, { ok: false, field: 'whatsapp', message: 'Escreva o seu WhatsApp com DDD.' });
+    if (env.MAILCHIMP_API_KEY) {
+      try {
+        const result = await registerMember({ fetchImpl, key: env.MAILCHIMP_API_KEY, nome, email, phone, attribution: body.attribution });
+        if (result.restricted) return send(400, { ok: false, field: 'email', message: 'Este e-mail precisa confirmar a inscrição no Mailchimp. Fale com a escola para regularizar seu cadastro.' });
+        const meta_receipt = issueReceipt({ event_id: body.event_id, email, phone: '+55' + phone, first_name: nome }, env.META_CAPI_TOKEN);
+        return send(200, { ok: true, pending: false, ...(meta_receipt ? { meta_receipt } : {}) });
+      } catch {
+        return send(502, { ok: false, message: 'Não conseguimos concluir sua inscrição agora. Tente novamente em instantes.' });
+      }
+    }
     const url = new URL(FORM_URL);
     url.searchParams.set('EMAIL', email);
     url.searchParams.set('FNAME', nome);
     url.searchParams.set('PHONE', `+55${phone}`);
+    for (const key of ['USOURCE', 'UMEDIUM', 'UCAMPAIGN', 'UCONTENT', 'UTERM', 'FBCLID']) {
+      const value = body.attribution?.[key];
+      if (typeof value === 'string' && value.trim()) url.searchParams.set(key, value.trim().slice(0, 500));
+    }
     url.searchParams.set('tags', EVENT_TAG_ID);
     url.searchParams.set('b_da6f3a2d4fd2aef20679be707_375e915980', '');
     url.searchParams.set('c', 'erveiraCallback');
@@ -48,7 +64,9 @@ function createHandler({ fetchImpl = fetch, env = process.env } = {}) {
       const result = JSON.parse(match ? match[1] : text);
       const message = String(result.msg || '').replace(/<[^>]*>/g, '');
       if (result.result === 'success') {
-        return send(200, { ok: true, pending: /confirm|confirmation|quase|almost/i.test(message) });
+        const pending = /confirm|confirmation|quase|almost/i.test(message);
+        const meta_receipt = !pending ? issueReceipt({ event_id: body.event_id, email, phone: '+55' + phone, first_name: nome }, env.META_CAPI_TOKEN) : null;
+        return send(200, { ok: true, pending, ...(meta_receipt ? { meta_receipt } : {}) });
       }
       if (/already subscribed|j[áa] est[áa] inscrit|j[áa] cadastrad/i.test(message)) {
         return send(409, { ok: false, field: 'email', message: 'Este e-mail já está cadastrado no Mailchimp. Use outro e-mail para esta inscrição ou fale com a escola.' });
